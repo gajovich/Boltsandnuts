@@ -886,6 +886,10 @@ h6 {
   top: 0;
 }
 
+.banner__img img {
+  z-index: 2;
+}
+
 .banner__top {
   position: relative;
   z-index: 3;
