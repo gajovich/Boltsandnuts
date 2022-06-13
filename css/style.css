@@ -886,10 +886,6 @@ h6 {
   top: 0;
 }
 
-.banner__img img {
-  z-index: 2;
-}
-
 .banner__top {
   position: relative;
   z-index: 3;
@@ -2776,12 +2772,7 @@ h6 {
     background-color: #fff;
   }
 
-  .submenu__column:nth-child(1) .submenu__title {
-    min-height: 6.25rem;
-    padding-top: 1.6875rem;
-  }
-
-  .submenu__column:nth-child(4) {
+  .submenu__column_grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -2791,13 +2782,13 @@ h6 {
             column-gap: 1.875rem;
   }
 
-  .submenu__column:nth-child(4) .submenu__title {
-    padding-top: 0;
-    min-height: unset;
-  }
-
   .submenu__title {
     margin-bottom: 1.25rem;
+  }
+
+  .submenu__title_big {
+    min-height: 6.25rem;
+    padding-top: 1.6875rem;
   }
 
   .submenu__body {
