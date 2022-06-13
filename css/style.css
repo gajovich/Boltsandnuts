@@ -673,11 +673,20 @@ h6 {
           transform: translate(0px, -50%);
   width: 1.5rem;
   height: 1.5rem;
-  text-align: center;
-  line-height: 1.4285714286;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   border: 2px solid #ffffff;
   background-color: #727271;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .icon-menu {
@@ -863,23 +872,23 @@ h6 {
   background: url("../img/banner/banner.png") 0 0 no-repeat; }
 
 .banner__body {
-  overflow: hidden;
   position: relative;
   min-height: 15.625rem;
   font-weight: 700;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .banner__img {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
 }
 
 .banner__top {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   -webkit-transform: rotate(13.5deg) translate(0%, 0%);
       -ms-transform: rotate(13.5deg) translate(0%, 0%);
           transform: rotate(13.5deg) translate(0%, 0%);
@@ -889,7 +898,7 @@ h6 {
 
 .banner__bottom {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   color: #ffffff;
   -webkit-transform: rotate(13.5deg) translate(23.4375rem, 0%);
       -ms-transform: rotate(13.5deg) translate(23.4375rem, 0%);
